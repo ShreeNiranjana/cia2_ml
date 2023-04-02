@@ -1,0 +1,41 @@
+<html>
+  
+<head>
+    <link rel="stylesheet" href="../static/style1.css">
+    <script type="text/javascript" src="app.js">
+    </script>
+</head>
+  
+<body>
+    <div class="container">
+        <h1>HEART DISEASE PREDICTOR</h1>
+        <div class="wrapper">
+  	<form action="predict" method="post">
+            <p>AGE:</p>
+            <input type="int" id="age" placeholder=""> 
+            <p>GENDER</p>
+            <select id="gender">
+                <option selected disabled hidden>
+                    Select
+                </option>
+                <option value="4">0 MALE</option>
+                <option value="5">1 FEMALE</option>
+               
+            </select>
+            <p>CigsPerDay</p>
+            <input type="int" id="CigsPerDay" placeholder="">
+            <p>Total Cholestrol</p>
+            <input type="int" id="TotalCholestrol" placeholder="">
+	    <p>SysBP</p>
+            <input type="int" id="SysBP" placeholder="">
+            <p>Glucose</p>
+            <input type="int" name="glucose" placeholder="">
+            <button type="submit">predict</button>
+        </form>
+        </div>
+  
+        
+    </div>
+</body>
+  
+</html>
